@@ -39,15 +39,13 @@ const actors = [{
 }
 ];
 
-const ul = document.querySelector(".cast ul");
+const div = document.querySelector(".actors");
 
 actors.forEach(element => {
-  const li = document.createElement("li");
   const link = document.createElement("a");
   link.textContent = element.name;
   link.href = element.url;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
-  li.appendChild(link);
-  ul.appendChild(li);
+  div.appendChild(link);
 });

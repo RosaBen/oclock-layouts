@@ -56,6 +56,20 @@ main section {
   text-align: center;
 }
 
+.actors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.actors a {
+  background-color: #f4f0ec;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
 .cards {
   text-align: center;
 }
@@ -123,24 +137,17 @@ article p {
   margin-bottom: 0.7rem;
 }
 
-.cast ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  margin-bottom: 2rem;
-}
-
-.cast li {
-  background-color: #f4f0ec;
-  border-radius: 1rem;
-  padding: 0.4rem;
-  cursor: pointer;
-}
-
-.cast a {
+.actors a {
   color: #791729;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.actors a:hover {
+  background-color: black;
+  color: white;
 }
 
 .footer {
@@ -157,6 +164,10 @@ footer p {
   border: 0.2rem solid #f4f0ec;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+footer p:hover {
+  opacity: 0.6;
 }
 footer a {
   color: #f4f0ec;
